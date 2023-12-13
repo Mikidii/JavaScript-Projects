@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(67, 67, 86);
+  color: aliceblue;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.container {
+  margin: 5% auto;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid rgb(217, 21, 21);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+span {
+  position: absolute;
+  font-size: 75px;
+  text-align: center;
+  height: 75px;
+  width: 75px;
+  margin: 5px;
+  margin-left: -35px;
+}
+
+.top {
+  border-top: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.right {
+  border-right: none;
+}
+
+.alert {
+  height: 75px;
+  width: 125px;
+  display: inline-block;
+  background: rgb(67, 67, 86);
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 75px 2px dimgrey;
+  animation: larger 0.5s;
+  animation-fill-mode: forwards;
+  box-sizing: content-box;
+  padding: 15px;
+  border: 2px solid silver;
+}
+
+button {
+  background: rgb(67, 67, 86);
+  color: ghostwhite;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.activeBox {
+  background: silver;
+}
+
+@keyframes larger {
+  from {
+    height: 75px;
+    width: 125px;
+  }
+  to {
+    height: 100px;
+    width: 250px;
+  }
+}
